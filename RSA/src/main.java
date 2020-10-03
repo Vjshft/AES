@@ -14,7 +14,7 @@ import java.security.NoSuchAlgorithmException;
 import java.security.spec.KeySpec;
 import java.util.Base64;
 
-
+//try
 public class main extends JFrame{
 	private static String secretKey;
 	private static String salt = "superCondimento";
