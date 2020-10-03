@@ -14,7 +14,7 @@ import java.security.NoSuchAlgorithmException;
 import java.security.spec.KeySpec;
 import java.util.Base64;
 
-
+//Clase Main principal 
 public class main extends JFrame{
 	private static String secretKey;
 	private static String salt = "superCondimento";
@@ -26,22 +26,44 @@ public class main extends JFrame{
 	new main();
 	
 	}
-	
+	//Este programa usa JPnael para crear una interfaz grÃ¡fica para la interacciÃ³n con el usuario
+    //AquÃ­ se setea el menu principal del Usuario
+
 	public main() {
-	super("Cifrado/Descifrado AES-256");
+    
+    //titulo de la ventana
+	super("Cifrado y Descifrado AES-256");
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    setSize(350, 200);
+    setSize(500, 350);
     JPanel general = new JPanel();
     general.setLayout(new GridLayout(4, 1));
     setLocationRelativeTo(null);
     setDefaultCloseOperation(EXIT_ON_CLOSE);
     setResizable(false);
     add(general, BorderLayout.CENTER);
+
+    //botones y labels del menu principal
+    JLabel labelInstrucciones = new JLabel("Selecciona la operacion");
+    labelInstrucciones.setHorizontalAlignment(0);
+    general.add(labelInstrucciones,"North");
+    JLabel labelInstrucciones2 = new JLabel("que quieras ejecutar:");
+    general.add(labelInstrucciones2);
     JButton cifraTexto = new JButton("Cifrar Texto");
+    general.add(cifraTexto);
     JButton cifraArchivo = new JButton("Cifrar Archivo");
+    general.add(cifraArchivo);
     JButton descifraTexto = new JButton("Descifrar Texto");
+    general.add(descifraTexto);
     JButton descifraArchivo = new JButton("Descifrar Archivo");
- 
+    general.add(descifraArchivo);
+    JLabel Nombre1 = new JLabel("Creadores : Juan Jo A01654012");
+    general.add(Nombre1);
+    JLabel Nombre2 = new JLabel("Emilio !!!??  A0?????", JLabel.CENTER);
+    general.add(Nombre2);
+
+
+    //Los actionsListeners de los botones
+    //El programa sepa que hacer cuando le das un click a uno de estos botones
     cifraTexto.addActionListener(new ActionListener() {
         public void actionPerformed(ActionEvent event) {
             setVisible(false);
@@ -83,15 +105,10 @@ public class main extends JFrame{
 		System.out.println("Algoritmo no encontrado");;
 	}
     
-    general.add(cifraTexto);
-    general.add(cifraArchivo);
-    general.add(descifraTexto);
-    general.add(descifraArchivo);
-    
     setVisible(true);
     }
 	
-	
+	//clase para cifrar el texto
 	public static void CifradoTexto() {
 		JFrame ventanaCifradoTexto = new JFrame("Cifrado de Texto");
         ventanaCifradoTexto.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
@@ -110,10 +127,10 @@ public class main extends JFrame{
         JLabel label_3 = new JLabel();
         label_1.setText("Inserte texto a cifrar");
         label_1.setHorizontalAlignment(0);
-        label_2.setText("Inserte la contraseña");
+        label_2.setText("Inserte la contrasena");
         label_2.setHorizontalAlignment(0);
-        label_3.setText("<html>NOTA: La contraseña debe ser de una longitud mínima de 8 caracteres, y debe incluir como<br>"
-        + "minimo un digito, una letra mayúscula, una minuscula y un caracter especial</html>");
+        label_3.setText("<html>NOTA: La contrasena debe ser de una longitud minima de 8 caracteres, y debe incluir como<br>"
+        + "minimo un digito, una letra mayuscula, una minuscula y un caracter especial</html>");
         label_3.setFont(new Font("Arial", Font.ITALIC, 12));
         label_1.setFont(new Font("Arial", Font.BOLD, 16));
         label_2.setFont(new Font("Arial", Font.BOLD, 16));
@@ -199,10 +216,10 @@ public class main extends JFrame{
         JLabel label_3 = new JLabel();
         label_1.setText("Introduzca la ruta completa del archivo a cifrar");
         label_1.setHorizontalAlignment(0);
-        label_2.setText("Inserte la contraseña");
+        label_2.setText("Inserte la contrasena");
         label_2.setHorizontalAlignment(0);
-        label_3.setText("<html>NOTA: La contraseña debe ser de una longitud mínima de <br> 8 caracteres, y debe incluir como minimo"
-        + "un digito, una letra <br>mayúscula, una minuscula y un caracter especial</html>");
+        label_3.setText("<html>NOTA: La contrasena debe ser de una longitud minima de <br> 8 caracteres, y debe incluir como minimo"
+        + "un digito, una letra <br>mayuscula, una minuscula y un caracter especial</html>");
         label_3.setFont(new Font("Arial", Font.ITALIC, 12));
         label_1.setFont(new Font("Arial", Font.BOLD, 16));
         label_2.setFont(new Font("Arial", Font.BOLD, 16));
@@ -322,10 +339,10 @@ public class main extends JFrame{
         JLabel label_3 = new JLabel();
         label_1.setText("Inserte texto a descifrar");
         label_1.setHorizontalAlignment(0);
-        label_2.setText("Inserte la contraseña");
+        label_2.setText("Inserte la contrasena");
         label_2.setHorizontalAlignment(0);
-        label_3.setText("<html>NOTA: La contraseña debe ser de una longitud mínima de 8 caracteres, y debe incluir como<br>"
-        + "minimo un digito, una letra mayúscula, una minuscula y un caracter especial</html>");
+        label_3.setText("<html>NOTA: La contrasena debe ser de una longitud minima de 8 caracteres, y debe incluir como<br>"
+        + "minimo un digito, una letra mayuscula, una minuscula y un caracter especial</html>");
         label_3.setFont(new Font("Arial", Font.ITALIC, 12));
         label_1.setFont(new Font("Arial", Font.BOLD, 16));
         label_2.setFont(new Font("Arial", Font.BOLD, 16));
@@ -410,10 +427,10 @@ public class main extends JFrame{
         JLabel label_3 = new JLabel();
         label_1.setText("Ruta completa del archivo a descifrar");
         label_1.setHorizontalAlignment(0);
-        label_2.setText("Inserte la contraseña");
+        label_2.setText("Inserte la contraseï¿½a");
         label_2.setHorizontalAlignment(0);
-        label_3.setText("<html>NOTA: La contraseña debe ser de una longitud mínima de <br> 8 caracteres, y debe incluir como minimo"
-        + "un digito, una letra <br>mayúscula, una minuscula y un caracter especial</html>");
+        label_3.setText("<html>NOTA: La contraseï¿½a debe ser de una longitud mï¿½nima de <br> 8 caracteres, y debe incluir como minimo"
+        + "un digito, una letra <br>mayï¿½scula, una minuscula y un caracter especial</html>");
         label_3.setFont(new Font("Arial", Font.ITALIC, 12));
         label_1.setFont(new Font("Arial", Font.BOLD, 16));
         label_2.setFont(new Font("Arial", Font.BOLD, 16));
