@@ -47,6 +47,7 @@ public class main extends JFrame{
     labelInstrucciones.setHorizontalAlignment(0);
     general.add(labelInstrucciones,"North");
     JLabel labelInstrucciones2 = new JLabel("que quieras ejecutar:");
+    labelInstrucciones2.setHorizontalAlignment(0);
     general.add(labelInstrucciones2);
     JButton cifraTexto = new JButton("Cifrar Texto");
     general.add(cifraTexto);
@@ -56,9 +57,9 @@ public class main extends JFrame{
     general.add(descifraTexto);
     JButton descifraArchivo = new JButton("Descifrar Archivo");
     general.add(descifraArchivo);
-    JLabel Nombre1 = new JLabel("Creadores : Juan Jo A01654012");
+    JLabel Nombre1 = new JLabel("Creadores : Juan Jo A01654012", JLabel.CENTER);
     general.add(Nombre1);
-    JLabel Nombre2 = new JLabel("Emilio !!!??  A0?????", JLabel.CENTER);
+    JLabel Nombre2 = new JLabel("Emiliano Pineda  A001332517", JLabel.CENTER);
     general.add(Nombre2);
 
 
