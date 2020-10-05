@@ -113,7 +113,7 @@ public class main extends JFrame{
 	public static void CifradoTexto() {
 		JFrame ventanaCifradoTexto = new JFrame("Cifrado de Texto");
         ventanaCifradoTexto.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-        ventanaCifradoTexto.setSize(550, 400);
+        ventanaCifradoTexto.setSize(550, 430);
         ventanaCifradoTexto.setLocationRelativeTo(null);
         ventanaCifradoTexto.setResizable(false);
         JPanel panelDentro_1 = new JPanel();
@@ -130,7 +130,7 @@ public class main extends JFrame{
         label_1.setHorizontalAlignment(0);
         label_2.setText("Inserte la contrasena");
         label_2.setHorizontalAlignment(0);
-        label_3.setText("<html>NOTA: La contrasena debe ser de una longitud minima de 8 caracteres, y debe incluir como<br>"
+        label_3.setText("<html>NOTA: La contrasenia debe ser de una longitud minima de 8 caracteres, y debe incluir como<br>"
         + "minimo un digito, una letra mayuscula, una minuscula y un caracter especial</html>");
         label_3.setFont(new Font("Arial", Font.ITALIC, 12));
         label_1.setFont(new Font("Arial", Font.BOLD, 16));
@@ -202,7 +202,7 @@ public class main extends JFrame{
 	public static void CifradoArchivo() {
 		JFrame ventanaCifradoTexto = new JFrame("Cifrado de Archivo");
         ventanaCifradoTexto.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-        ventanaCifradoTexto.setSize(400, 250);
+        ventanaCifradoTexto.setSize(400, 260);
         ventanaCifradoTexto.setLocationRelativeTo(null);
         ventanaCifradoTexto.setResizable(false);
         JPanel panelDentro_1 = new JPanel();
@@ -217,9 +217,9 @@ public class main extends JFrame{
         JLabel label_3 = new JLabel();
         label_1.setText("Introduzca la ruta completa del archivo a cifrar");
         label_1.setHorizontalAlignment(0);
-        label_2.setText("Inserte la contrasena");
+        label_2.setText("Inserte la contrasenia");
         label_2.setHorizontalAlignment(0);
-        label_3.setText("<html>NOTA: La contrasena debe ser de una longitud minima de <br> 8 caracteres, y debe incluir como minimo"
+        label_3.setText("<html>NOTA: La contrasenia debe ser de una longitud minima de <br> 8 caracteres, y debe incluir como minimo"
         + "un digito, una letra <br>mayuscula, una minuscula y un caracter especial</html>");
         label_3.setFont(new Font("Arial", Font.ITALIC, 12));
         label_1.setFont(new Font("Arial", Font.BOLD, 16));
@@ -325,7 +325,7 @@ public class main extends JFrame{
 	public static void DescifradoTexto() {
 		JFrame ventanaCifradoTexto = new JFrame("Descifrado de Texto");
         ventanaCifradoTexto.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-        ventanaCifradoTexto.setSize(550, 400);
+        ventanaCifradoTexto.setSize(550, 430);
         ventanaCifradoTexto.setLocationRelativeTo(null);
         ventanaCifradoTexto.setResizable(false);
         JPanel panelDentro_1 = new JPanel();
@@ -340,9 +340,9 @@ public class main extends JFrame{
         JLabel label_3 = new JLabel();
         label_1.setText("Inserte texto a descifrar");
         label_1.setHorizontalAlignment(0);
-        label_2.setText("Inserte la contrasena");
+        label_2.setText("Inserte la contrasenia");
         label_2.setHorizontalAlignment(0);
-        label_3.setText("<html>NOTA: La contrasena debe ser de una longitud minima de 8 caracteres, y debe incluir como<br>"
+        label_3.setText("<html>NOTA: La contrasenia debe ser de una longitud minima de 8 caracteres, y debe incluir como<br>"
         + "minimo un digito, una letra mayuscula, una minuscula y un caracter especial</html>");
         label_3.setFont(new Font("Arial", Font.ITALIC, 12));
         label_1.setFont(new Font("Arial", Font.BOLD, 16));
@@ -413,7 +413,7 @@ public class main extends JFrame{
 	public static void DescifradoArchivo() {
 		JFrame ventanaCifradoTexto = new JFrame("Descifrado de Archivo");
         ventanaCifradoTexto.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-        ventanaCifradoTexto.setSize(400, 250);
+        ventanaCifradoTexto.setSize(400, 260);
         ventanaCifradoTexto.setLocationRelativeTo(null);
         ventanaCifradoTexto.setResizable(false);
         JPanel panelDentro_1 = new JPanel();
@@ -428,10 +428,10 @@ public class main extends JFrame{
         JLabel label_3 = new JLabel();
         label_1.setText("Ruta completa del archivo a descifrar");
         label_1.setHorizontalAlignment(0);
-        label_2.setText("Inserte la contrase�a");
+        label_2.setText("Inserte la contrasenia");
         label_2.setHorizontalAlignment(0);
-        label_3.setText("<html>NOTA: La contrase�a debe ser de una longitud m�nima de <br> 8 caracteres, y debe incluir como minimo"
-        + "un digito, una letra <br>may�scula, una minuscula y un caracter especial</html>");
+        label_3.setText("<html>NOTA: La contrasenia debe ser de una longitud minima de <br> 8 caracteres, y debe incluir como minimo"
+        + " un digito, una letra <br>mayuscula, una minuscula y un caracter especial</html>");
         label_3.setFont(new Font("Arial", Font.ITALIC, 12));
         label_1.setFont(new Font("Arial", Font.BOLD, 16));
         label_2.setFont(new Font("Arial", Font.BOLD, 16));
