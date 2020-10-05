@@ -36,6 +36,8 @@ public class main extends JFrame{
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     setSize(500, 350);
     JPanel general = new JPanel();
+
+    general.setBackground(new Color (5, 232, 145, 182));
     general.setLayout(new GridLayout(4, 1));
     setLocationRelativeTo(null);
     setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -50,12 +52,16 @@ public class main extends JFrame{
     labelInstrucciones2.setHorizontalAlignment(0);
     general.add(labelInstrucciones2);
     JButton cifraTexto = new JButton("Cifrar Texto");
+    cifraTexto.setBackground(new Color (163, 255, 8, 200));
     general.add(cifraTexto);
     JButton cifraArchivo = new JButton("Cifrar Archivo");
+    cifraArchivo.setBackground(new Color (163, 255, 8, 200));
     general.add(cifraArchivo);
     JButton descifraTexto = new JButton("Descifrar Texto");
+    descifraTexto.setBackground(new Color (163, 255, 8, 200));
     general.add(descifraTexto);
     JButton descifraArchivo = new JButton("Descifrar Archivo");
+    descifraArchivo.setBackground(new Color (163, 255, 8, 200));
     general.add(descifraArchivo);
     JLabel Nombre1 = new JLabel("Creadores : Juan Jo A01654012", JLabel.CENTER);
     general.add(Nombre1);
@@ -118,17 +124,20 @@ public class main extends JFrame{
         ventanaCifradoTexto.setResizable(false);
         JPanel panelDentro_1 = new JPanel();
         JPanel panelDentro_2 = new JPanel();
-        JPanel panelGeneral = new JPanel(); 
+        JPanel panelGeneral = new JPanel();
         panelDentro_1.setLayout(new BorderLayout(10,10));
+        panelDentro_1.setBackground(new Color (245, 194, 71, 0));
         panelDentro_2.setLayout(new BorderLayout(10,10));
+        panelDentro_2.setBackground(new Color (245, 194, 71, 0));
         panelGeneral.setLayout(new FlowLayout());
+        panelGeneral.setBackground(new Color (5, 232, 145, 182));
         
         JLabel label_1 = new JLabel();
         JLabel label_2 = new JLabel();
         JLabel label_3 = new JLabel();
         label_1.setText("Inserte texto a cifrar");
         label_1.setHorizontalAlignment(0);
-        label_2.setText("Inserte la contrasena");
+        label_2.setText("Inserte la contrasenia");
         label_2.setHorizontalAlignment(0);
         label_3.setText("<html>NOTA: La contrasenia debe ser de una longitud minima de 8 caracteres, y debe incluir como<br>"
         + "minimo un digito, una letra mayuscula, una minuscula y un caracter especial</html>");
@@ -142,7 +151,9 @@ public class main extends JFrame{
         JPasswordField passwordField = new JPasswordField(15);
         char c = passwordField.getEchoChar();
         JButton cifra = new JButton("Cifrar");
+        cifra.setBackground(new Color (163, 255, 8, 200));
         JButton desplegarCaracteres = new JButton("Desplegar Caracteres");
+        desplegarCaracteres.setBackground(new Color (163, 255, 8, 200));
         
         panelDentro_1.add(label_1, "North");
         panelDentro_1.add(scrollPane, "Center");
@@ -209,8 +220,11 @@ public class main extends JFrame{
         JPanel panelDentro_2 = new JPanel();
         JPanel panelGeneral = new JPanel(); 
         panelDentro_1.setLayout(new BorderLayout(10,10));
+        panelDentro_1.setBackground(new Color (5, 232, 145, 0));
         panelDentro_2.setLayout(new BorderLayout(10,10));
+        panelDentro_2.setBackground(new Color (5, 232, 145, 0));
         panelGeneral.setLayout(new FlowLayout());
+        panelGeneral.setBackground(new Color (5, 232, 145, 182));
         
         JLabel label_1 = new JLabel();
         JLabel label_2 = new JLabel();
@@ -229,8 +243,11 @@ public class main extends JFrame{
         JPasswordField passwordField = new JPasswordField(15);
         char c = passwordField.getEchoChar();
         JButton cifra = new JButton("Cifrar");
+        cifra.setBackground(new Color (163, 255, 8, 200));
         JButton desplegarCaracteres = new JButton("Desplegar Caracteres");
+        desplegarCaracteres.setBackground(new Color (163, 255, 8, 200));
         JButton seleccionaArchivo = new JButton("Selecciona un Archivo");
+        seleccionaArchivo.setBackground(new Color (163, 255, 8, 200));
         
         panelDentro_1.add(label_1, "North");
         panelDentro_1.add(archivoCifrar, "West");
@@ -332,8 +349,11 @@ public class main extends JFrame{
         JPanel panelDentro_2 = new JPanel();
         JPanel panelGeneral = new JPanel(); 
         panelDentro_1.setLayout(new BorderLayout(10,10));
+        panelDentro_1.setBackground(new Color (5, 232, 145, 0));
         panelDentro_2.setLayout(new BorderLayout(10,10));
+        panelDentro_2.setBackground(new Color (5, 232, 145, 0));
         panelGeneral.setLayout(new FlowLayout());
+        panelGeneral.setBackground(new Color (5, 232, 145, 182));
         
         JLabel label_1 = new JLabel();
         JLabel label_2 = new JLabel();
@@ -354,8 +374,10 @@ public class main extends JFrame{
         JPasswordField passwordField = new JPasswordField(15);
         char c = passwordField.getEchoChar();
         JButton descifra = new JButton("Descifrar");
+        descifra.setBackground(new Color (163, 255, 8, 200));
         JButton desplegarCaracteres = new JButton("Desplegar Caracteres");
-        
+        desplegarCaracteres.setBackground(new Color (163, 255, 8, 200));
+
         panelDentro_1.add(label_1, "North");
         panelDentro_1.add(scrollPane, "Center");
         panelDentro_1.add(label_2, "South");
@@ -420,8 +442,11 @@ public class main extends JFrame{
         JPanel panelDentro_2 = new JPanel();
         JPanel panelGeneral = new JPanel(); 
         panelDentro_1.setLayout(new BorderLayout(10,10));
+        panelDentro_1.setBackground(new Color (5, 232, 145, 0));
         panelDentro_2.setLayout(new BorderLayout(10,10));
+        panelDentro_2.setBackground(new Color (5, 232, 145, 0));
         panelGeneral.setLayout(new FlowLayout());
+        panelGeneral.setBackground(new Color (5, 232, 145, 182));
         
         JLabel label_1 = new JLabel();
         JLabel label_2 = new JLabel();
@@ -440,8 +465,11 @@ public class main extends JFrame{
         JPasswordField passwordField = new JPasswordField(15);
         char c = passwordField.getEchoChar();
         JButton cifra = new JButton("Descifrar");
+        cifra.setBackground(new Color (163, 255, 8, 200));
         JButton desplegarCaracteres = new JButton("Desplegar Caracteres");
+        desplegarCaracteres.setBackground(new Color (163, 255, 8, 200));
         JButton seleccionaArchivo = new JButton("Selecciona un Archivo");
+        seleccionaArchivo.setBackground(new Color (163, 255, 8, 200));
         
         panelDentro_1.add(label_1, "North");
         panelDentro_1.add(archivoCifrar, "West");
