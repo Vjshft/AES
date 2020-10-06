@@ -34,7 +34,7 @@ public class main extends JFrame{
     //titulo de la ventana
 	super("Cifrado y Descifrado AES-256");
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    setSize(500, 350);
+    setSize(500, 500);
     JPanel general = new JPanel();
 
     general.setBackground(new Color (5, 232, 145, 182));
@@ -63,13 +63,11 @@ public class main extends JFrame{
     JButton descifraArchivo = new JButton("Descifrar Archivo");
     descifraArchivo.setBackground(new Color (163, 255, 8, 200));
     general.add(descifraArchivo);
-    JLabel Nombre1 = new JLabel("Creadores : Juan Jo A01654012", JLabel.CENTER);
-    general.add(Nombre1);
-    JLabel Nombre2 = new JLabel("Emiliano Pineda  A001332517", JLabel.CENTER);
-    general.add(Nombre2);
-    JLabel Nombre3 = new JLabel("Jessica Azcona  A01650183", JLabel.CENTER);
-    general.add(Nombre3);
-
+    JLabel Nombres = new JLabel("<html>Creadores : Juan Jo - A01654012"
+    		+ "<br>Emiliano Pineda - A001332517"
+    		+ "<br>Jessica Azcona - A01650183"
+    		+ "<br>Luis Torres - A01335919</html>", JLabel.CENTER);
+    general.add(Nombres);
 
     //Los actionsListeners de los botones
     //El programa sepa que hacer cuando le das un click a uno de estos botones
@@ -106,7 +104,7 @@ public class main extends JFrame{
         }
     });
     
-    byte[] iv = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+    byte[] iv = { 1, 4, 8, 2, 9, 0, 5, 0, 7, 8, 2, 5, 6, 2, 7, 0 };
     ivspec = new IvParameterSpec(iv);
 	try {
 		factory = SecretKeyFactory.getInstance("PBKDF2WithHmacSHA256");
@@ -142,8 +140,7 @@ public class main extends JFrame{
         label_1.setHorizontalAlignment(0);
         label_2.setText("Inserte la contrasenia");
         label_2.setHorizontalAlignment(0);
-        label_3.setText("<html>NOTA: La contrasenia debe ser de una longitud minima de 8 caracteres, y debe incluir como<br>"
-        + "minimo un digito, una letra mayuscula, una minuscula y un caracter especial</html>");
+        label_3.setText("");
         label_3.setFont(new Font("Arial", Font.ITALIC, 12));
         label_1.setFont(new Font("Arial", Font.BOLD, 16));
         label_2.setFont(new Font("Arial", Font.BOLD, 16));
@@ -236,8 +233,7 @@ public class main extends JFrame{
         label_1.setHorizontalAlignment(0);
         label_2.setText("Inserte la contrasenia");
         label_2.setHorizontalAlignment(0);
-        label_3.setText("<html>NOTA: La contrasenia debe ser de una longitud minima de <br> 8 caracteres, y debe incluir como minimo"
-        + "un digito, una letra <br>mayuscula, una minuscula y un caracter especial</html>");
+        label_3.setText("");
         label_3.setFont(new Font("Arial", Font.ITALIC, 12));
         label_1.setFont(new Font("Arial", Font.BOLD, 16));
         label_2.setFont(new Font("Arial", Font.BOLD, 16));
@@ -365,8 +361,7 @@ public class main extends JFrame{
         label_1.setHorizontalAlignment(0);
         label_2.setText("Inserte la contrasenia");
         label_2.setHorizontalAlignment(0);
-        label_3.setText("<html>NOTA: La contrasenia debe ser de una longitud minima de 8 caracteres, y debe incluir como<br>"
-        + "minimo un digito, una letra mayuscula, una minuscula y un caracter especial</html>");
+        label_3.setText("");
         label_3.setFont(new Font("Arial", Font.ITALIC, 12));
         label_1.setFont(new Font("Arial", Font.BOLD, 16));
         label_2.setFont(new Font("Arial", Font.BOLD, 16));
@@ -458,8 +453,7 @@ public class main extends JFrame{
         label_1.setHorizontalAlignment(0);
         label_2.setText("Inserte la contrasenia");
         label_2.setHorizontalAlignment(0);
-        label_3.setText("<html>NOTA: La contrasenia debe ser de una longitud minima de <br> 8 caracteres, y debe incluir como minimo"
-        + " un digito, una letra <br>mayuscula, una minuscula y un caracter especial</html>");
+        label_3.setText("");
         label_3.setFont(new Font("Arial", Font.ITALIC, 12));
         label_1.setFont(new Font("Arial", Font.BOLD, 16));
         label_2.setFont(new Font("Arial", Font.BOLD, 16));
@@ -565,3 +559,6 @@ public class main extends JFrame{
 	}
 	
 }
+
+
+
