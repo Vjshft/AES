@@ -67,10 +67,13 @@ public class main extends JFrame{
     general.add(Nombre1);
     JLabel Nombre2 = new JLabel("Emiliano Pineda  A001332517", JLabel.CENTER);
     general.add(Nombre2);
+    JLabel Nombre3 = new JLabel("Jessica Azcona  A01650183", JLabel.CENTER);
+    general.add(Nombre3);
 
 
     //Los actionsListeners de los botones
     //El programa sepa que hacer cuando le das un click a uno de estos botones
+	//Botón cifrar txto
     cifraTexto.addActionListener(new ActionListener() {
         public void actionPerformed(ActionEvent event) {
             setVisible(false);
@@ -78,7 +81,7 @@ public class main extends JFrame{
             setVisible(true);
         }
     });
-    
+    //Botón cifrar archivo
     cifraArchivo.addActionListener(new ActionListener() {
         public void actionPerformed(ActionEvent event) {
             setVisible(false);
@@ -86,7 +89,7 @@ public class main extends JFrame{
             setVisible(true);
         }
     });
-    
+    //Botón descifrar texto
     descifraTexto.addActionListener(new ActionListener() {
         public void actionPerformed(ActionEvent event) {
             setVisible(false);
@@ -94,7 +97,7 @@ public class main extends JFrame{
             setVisible(true);
         }
     });
-    
+    //Botón decifrar archivo
     descifraArchivo.addActionListener(new ActionListener() {
         public void actionPerformed(ActionEvent event) {
             setVisible(false);
@@ -209,7 +212,7 @@ public class main extends JFrame{
             }
         });
 	}
-	
+	//Clase cifrar archivo
 	public static void CifradoArchivo() {
 		JFrame ventanaCifradoTexto = new JFrame("Cifrado de Archivo");
         ventanaCifradoTexto.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
@@ -279,7 +282,7 @@ public class main extends JFrame{
             	
             }
         });
-		
+	//Ventana para elergir archivo a cifrar en la computadora
         seleccionaArchivo.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent event) {
             	ventanaCifradoTexto.setVisible(false);
@@ -338,7 +341,7 @@ public class main extends JFrame{
             }
         });
 	}
-
+	//Clase para decifrado de texto
 	public static void DescifradoTexto() {
 		JFrame ventanaCifradoTexto = new JFrame("Descifrado de Texto");
         ventanaCifradoTexto.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
@@ -431,7 +434,7 @@ public class main extends JFrame{
             }
         });
 	}
-	
+	//Clase descifrado de archivo
 	public static void DescifradoArchivo() {
 		JFrame ventanaCifradoTexto = new JFrame("Descifrado de Archivo");
         ventanaCifradoTexto.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
